@@ -1,7 +1,6 @@
 import React from "react";
 import Doing from "./WhatIDo";
 import Testimonial from "./testimonial";
-//changes
 
 function About() {
   return (

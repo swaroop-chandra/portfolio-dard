@@ -1,5 +1,5 @@
 import React from "react";
-import Doing from "./Doing";
+import Doing from "./doing";
 import Testimonial from "./testimonial";
 
 function About() {

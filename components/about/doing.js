@@ -1,7 +1,40 @@
 import React from "react";
 import CardHome from "../common/cardHome";
+import { GiPalette } from "react-icons/gi";
+import {
+  VscDatabase,
+  VscFileCode,
+  VscPieChart,
+  VscPreview,
+} from "react-icons/vsc";
 
 function Doing() {
+  const objectData = [
+    {
+      image: <VscPieChart className="w-10 h-10 text-amber-400" />,
+      title: "Web Architecture",
+      message:
+        "The most modern and high-quality design made at a professional level.",
+    },
+    {
+      image: <VscPreview className="w-10 h-10 text-amber-400" />,
+      title: "Front End Development",
+      message:
+        "The most modern and high-quality design made at a professional level.",
+    },
+    {
+      image: <VscFileCode className="w-10 h-10 text-amber-400" />,
+      title: "Back End Design",
+      message:
+        "The most modern and high-quality design made at a professional level.",
+    },
+    {
+      image: <GiPalette className="w-10 h-10 text-amber-400" />,
+      title: "Artist",
+      message:
+        "The most modern and high-quality design made at a professional level.",
+    },
+  ];
   return (
     <div>
       <main>

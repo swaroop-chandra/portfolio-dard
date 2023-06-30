@@ -1,6 +1,6 @@
 import React from "react";
-import Testimonial from "./testimonial";
 import Doing from "./Doing";
+import Testimonial from "./testimonial";
 
 function About() {
   return (

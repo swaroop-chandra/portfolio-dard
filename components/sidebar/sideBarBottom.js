@@ -3,11 +3,12 @@ import bg from "../../public/images/background/bg.jpg";
 import {
   TfiMobile,
   TfiEmail,
-  TfiCalendar,
+  TfiEnvelope,
   TfiLocationPin,
   TfiLinkedin,
 } from "react-icons/tfi";
 import { SiFacebook, SiGithub, SiInstagram } from "react-icons/si";
+import { SlDoc } from "react-icons/sl";
 
 function SideBarBottom() {
   function ComposeMail() {
@@ -31,6 +32,11 @@ Best regards,`;
 
     window.location.href = mailtoLink;
   }
+
+  const openDocumentInNewTab = () => {
+    const url = "/document/swaroop_resume.pdf";
+    window.open(url, "_blank");
+  };
   return (
     <div>
       <main>
@@ -65,13 +71,22 @@ Best regards,`;
                 <p>+91 - 8660253870</p>
               </div>
             </div>
-            <div className="flex mb-4">
+            <div
+              className="flex mb-4 cursor-pointer"
+              onClick={openDocumentInNewTab}
+            >
               <div className="icon_box lg:text-5xl lg:w-12 lg:h-12">
-                <TfiCalendar />
+                <SlDoc />
               </div>
-              <div className="text-start px-5 text-xs truncate my-auto">
-                <h2 className="text-sm text-stone-500 mb-1">Birthday</h2>
-                <p>July 26, 1994</p>
+              <div
+                className="text-start px-5 text-xs truncate my-auto cursor-pointer"
+                onClick={openDocumentInNewTab}
+              >
+                <h2 className="text-sm text-stone-500 mb-1">Resume</h2>
+                {/* <p></p> */}
+                {/* <Link > */}
+                <p>Look at it!</p>
+                {/* </Link> */}
               </div>
             </div>
             <div className="flex mb-4">

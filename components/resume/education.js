@@ -15,28 +15,19 @@ const Education = () => {
         </div>
         <ol className="ms-16">
           <li className="timeline_item">
-            <h4>University School Of The Arts</h4>
-            <span>2007 — 2008</span>
-            <p>
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
+            <h4>DCT Academy</h4>
+            <span>2019 — 2020</span>
+            <p>{`Done a course on MERN (Mongo,Express,React,Node) stack `}</p>
           </li>
           <li className="timeline_item">
-            <h4>University School Of The Arts</h4>
-            <span>2007 — 2008</span>
-            <p>
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
+            <h4>Canara Engineering College</h4>
+            <span>2012-2016</span>
+            <p>B.E. in Computer Science.</p>
           </li>
           <li className="timeline_item">
-            <h4>University School Of The Arts</h4>
-            <span>2007 — 2008</span>
-            <p>
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              delenit atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
+            <h4>St. Aloysius College</h4>
+            <span>2010-2012</span>
+            <p>Secondary Education - PCMB</p>
           </li>
         </ol>
       </main>

@@ -2,12 +2,12 @@ import React from "react";
 
 function CardHome({ image, title, message }) {
   return (
-    <div className=" mb-10" style={{ width: "48%" }}>
+    <div className=" mb-10 lg:w-[25rem] w-full flex">
       <main>
-        <div className="service_item">
-          <div className="h-full w-3/12 self-center">{image}</div>
+        <div className="service_item lg:flex">
+          <div className="h-full lg:w-3/12 self-center">{image}</div>
           <div>
-            <h1 className="font-semibold text-lg">{title}</h1>
+            <h1 className="font-semibold text-lg mt-3 lg:mt-0">{title}</h1>
             <p className="font-extralight text-sm mt-1">{message}</p>
           </div>
         </div>
@@ -24,7 +24,7 @@ function CardHome({ image, title, message }) {
           border-radius: 14px;
           box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.125);
           z-index: 1;
-          display: flex;
+
           justify-content: flex-start;
           align-items: flex-start;
           gap: 18px;

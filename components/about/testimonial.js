@@ -5,14 +5,17 @@ function Testimonial() {
     <div>
       <main>
         <div className=" testimonials_list has_scrollbar">
-          <div className="content_card  p-5 lg:min-w-[calc(50%-15px)] min-w-full w-52 ms-5">
+          <div
+            className="content_card  p-5 lg:min-w-[calc(50%-15px)] ms-5"
+            style={{ minWidth: "fit-content" }}
+          >
             <figure
-              className="testimonials_avatar_box w-20 h-20 "
+              className="testimonials_avatar_box lg:w-20 lg:h-20 w-[4rem] h-[4rem]"
               style={{ backgroundColor: "#4e4c4d" }}
             >
               <img src="/images/emoji/avatar1.png" alt="profile" />
             </figure>
-            <h1 className="ml-24 mb-5 font-semibold text-2xl capitalize">
+            <h1 className="lg:ml-24 ml-20  lg:mb-5 mb-2  font-semibold lg:text-2xl text-lg capitalize">
               Gaurav
             </h1>
             <p className="line-clamp-2 font-extralight text-sm">
@@ -23,15 +26,39 @@ function Testimonial() {
               eiusmod tempor incididunt ut laborels dolore magnarels alia.
             </p>
           </div>
-          <div className="content_card  p-5 lg:min-w-[calc(50%-15px)] min-w-full w-52">
+          <div
+            className="content_card  p-5 lg:min-w-[calc(50%-15px)]  ms-5"
+            style={{ minWidth: "fit-content" }}
+          >
             <figure
-              className="testimonials_avatar_box w-20 h-20 "
+              className="testimonials_avatar_box lg:w-20 lg:h-20 w-[4rem] h-[4rem]"
+              style={{ backgroundColor: "#4e4c4d" }}
+            >
+              <img src="/images/emoji/avatar2.png" alt="profile" />
+            </figure>
+            <h1 className="lg:ml-24 ml-20  lg:mb-5 mb-2  font-semibold lg:text-2xl text-lg capitalize">
+              Anjana
+            </h1>
+            <p className="line-clamp-2 font-extralight text-sm">
+              Swaroop was hired to create a corporate identity. We were very
+              pleased with the work done. She has a lot of experience and is
+              very concerned about the needs of client. Lorem ipsum dolor sit
+              amet, ullamcous cididt consectetur adipiscing elit, seds do et
+              eiusmod tempor incididunt ut laborels dolore magnarels alia.
+            </p>
+          </div>
+          <div
+            className="content_card  p-5 lg:min-w-[calc(50%-15px)]  ms-5"
+            style={{ minWidth: "fit-content" }}
+          >
+            <figure
+              className="testimonials_avatar_box lg:w-20 lg:h-20 w-[4rem] h-[4rem]"
               style={{ backgroundColor: "#4e4c4d" }}
             >
               <img src="/images/emoji/avatar3.png" alt="profile" />
             </figure>
-            <h1 className="ml-24 mb-5 font-semibold text-2xl capitalize">
-              anjana
+            <h1 className="lg:ml-24 ml-20  lg:mb-5 mb-2  font-semibold lg:text-2xl text-lg capitalize">
+              Pooja
             </h1>
             <p className="line-clamp-2 font-extralight text-sm">
               Swaroop was hired to create a corporate identity. We were very
@@ -41,32 +68,17 @@ function Testimonial() {
               eiusmod tempor incididunt ut laborels dolore magnarels alia.
             </p>
           </div>
-          <div className="content_card  p-5 lg:min-w-[calc(50%-15px)] min-w-full w-52">
+          <div
+            className="content_card  p-5 lg:min-w-[calc(50%-15px)]ms-5"
+            style={{ minWidth: "fit-content" }}
+          >
             <figure
-              className="testimonials_avatar_box w-20 h-20 "
-              style={{ backgroundColor: "#4e4c4d" }}
-            >
-              <img src="/images/emoji/avatar4.png" alt="profile" />
-            </figure>
-            <h1 className="ml-24 mb-5 font-semibold text-2xl capitalize">
-              swaroop
-            </h1>
-            <p className="line-clamp-2 font-extralight text-sm">
-              Swaroop was hired to create a corporate identity. We were very
-              pleased with the work done. She has a lot of experience and is
-              very concerned about the needs of client. Lorem ipsum dolor sit
-              amet, ullamcous cididt consectetur adipiscing elit, seds do et
-              eiusmod tempor incididunt ut laborels dolore magnarels alia.
-            </p>
-          </div>
-          <div className="content_card  p-5 lg:min-w-[calc(50%-15px)] min-w-full w-52">
-            <figure
-              className="testimonials_avatar_box w-20 h-20 "
+              className="testimonials_avatar_box lg:w-20 lg:h-20 w-[4rem] h-[4rem]"
               style={{ backgroundColor: "#4e4c4d" }}
             >
               <img src="/images/emoji/avatar5.png" alt="profile" />
             </figure>
-            <h1 className="ml-24 mb-5 font-semibold text-2xl capitalize">
+            <h1 className="lg:ml-24 ml-20  lg:mb-5 mb-2  font-semibold lg:text-2xl text-lg capitalize">
               Bishal
             </h1>
             <p className="line-clamp-2 font-extralight text-sm">

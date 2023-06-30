@@ -41,16 +41,16 @@ Best regards,`;
     <div>
       <main>
         <div className=" flex flex-col justify-between items-between">
-          <div>
+          <div className="mb-4">
             <div className="flex mb-4">
               <div
-                className="icon_box lg:text-5xl lg:w-12 lg:h-12 cursor-pointer"
+                className="icon_box lg:text-5xl lg:w-12 lg:h-12 w-10 h-10 cursor-pointer"
                 onClick={ComposeMail}
               >
                 <TfiEmail />
               </div>
 
-              <div className="text-start px-5 text-xs truncate my-auto">
+              <div className="text-start ps-5 text-xs truncate my-auto w-9/12">
                 <h2
                   className="text-sm text-stone-500 mb-1 cursor-pointer"
                   onClick={ComposeMail}
@@ -63,7 +63,7 @@ Best regards,`;
               </div>
             </div>
             <div className="flex mb-4">
-              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12">
+              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 w-10 h-10">
                 <TfiMobile />
               </div>
               <div className="text-start px-5 text-xs truncate my-auto">
@@ -75,7 +75,7 @@ Best regards,`;
               className="flex mb-4 cursor-pointer"
               onClick={openDocumentInNewTab}
             >
-              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12">
+              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 w-10 h-10">
                 <SlDoc />
               </div>
               <div
@@ -90,7 +90,7 @@ Best regards,`;
               </div>
             </div>
             <div className="flex mb-4">
-              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 cursor-pointer">
+              <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 cursor-pointer w-10 h-10">
                 <a
                   href="https://www.google.com/maps/place/Medical+Chamber/@12.8707728,74.8472166,16.82z/data=!4m14!1m7!3m6!1s0x3ba35b90b06f252d:0x2202cc6a717d3472!2sMedical+Chamber!8m2!3d12.8698592!4d74.8477389!16s%2Fg%2F11h2md1jjf!3m5!1s0x3ba35b90b06f252d:0x2202cc6a717d3472!8m2!3d12.8698592!4d74.8477389!16s%2Fg%2F11h2md1jjf?hl=en&entry=ttu"
                   target="_blank"
@@ -124,35 +124,36 @@ Best regards,`;
               </div>
             </div>
           </div>
+          <div className="border_bottom my-5"></div>
 
-          <div className="my-4 flex justify-center gap-4">
+          <div className="my-4 flex justify-evenly gap-4">
             <a
               href="https://www.facebook.com/swaroop.chandra.39/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiFacebook className="w-7 h-7 text-stone-500 hover:text-blue-600 hover:bg-gray-300 rounded-md cursor-pointer" />
+              <SiFacebook className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-blue-600 hover:bg-gray-300 rounded-md cursor-pointer" />
             </a>
             <a
               href="https://github.com/swaroop-chandra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiGithub className="w-7 h-7 text-stone-500 hover:text-stone-950 hover:bg-gray-300 rounded-md cursor-pointer" />
+              <SiGithub className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-stone-950 hover:bg-gray-300 rounded-md cursor-pointer" />
             </a>
             <a
               href="https://www.instagram.com/swapo_chan/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiInstagram className="w-7 h-7 text-stone-500 hover:text-fuchsia-500 hover:bg-gray-300 rounded-md cursor-pointer" />
+              <SiInstagram className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-fuchsia-500 hover:bg-gray-300 rounded-md cursor-pointer" />
             </a>
             <a
               href="https://www.linkedin.com/in/swaroop-chandra/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <TfiLinkedin className="w-7 h-7 text-stone-500 hover:text-blue-600 hover:bg-gray-300 rounded-md cursor-pointer p-1" />
+              <TfiLinkedin className="lg:w-7 lg:h-7 w-5 h-5 text-stone-500 hover:text-blue-600 hover:bg-gray-300 rounded-md cursor-pointer p-1" />
             </a>
           </div>
         </div>

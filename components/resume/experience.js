@@ -6,14 +6,14 @@ const Experience = () => {
     <div className="my-24">
       <main>
         <div className="flex gap-4 mb-5">
-          <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 m-1">
+          <div className="icon_box lg:text-5xl lg:w-12 lg:h-12 w-10 h-10 m-1">
             <TfiUser />
           </div>
           <div className="self-center">
             <h1 className="text-2xl font-semibold">Experience</h1>
           </div>
         </div>
-        <ol className="ms-16">
+        <ol className="lg:ms-16 ms-12">
           <li className="timeline_item">
             <h4>Taskmo</h4>
             <span>April 2021 - Present</span>
@@ -132,11 +132,15 @@ const Experience = () => {
 
         p {
           margin-top: 0.5rem;
-          font-weight: 200;
+          font-weight: 300;
+          font-size: 14px;
         }
         li span {
           color: #ffdb70;
           font-weight: 200;
+        }
+        ul > li {
+          font-size: 12px;
         }
       `}</style>
     </div>

@@ -15,7 +15,7 @@ const Skills = () => {
         </div>
         <div className="content_card p-5 w-full flex flex-wrap capitalize">
           <div className="w-6/12 p-4">
-            <h4>React JS</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">React JS</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -25,7 +25,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>Node JS</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">Node JS</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -35,7 +35,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>express</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">express</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -45,7 +45,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>mySQL</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">mySQL</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -55,7 +55,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>Redux</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">Redux</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -65,7 +65,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>context API</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">context API</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -75,7 +75,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>Next js</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">Next js</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -85,7 +85,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>PostgreSQL</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">PostgreSQL</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -95,7 +95,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>Javascript</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">Javascript</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div
@@ -105,7 +105,7 @@ const Skills = () => {
             </div>
           </div>
           <div className="w-6/12 p-4">
-            <h4>HTML & CSS</h4>
+            <h4 className="lg:text-lg text-xs mb-2 truncate">HTML & CSS</h4>
 
             <div className="bg-gray-300 h-2 rounded-lg overflow-hidden">
               <div

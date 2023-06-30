@@ -1,23 +1,35 @@
 import React from "react";
 import bg from "../../public/images/background/bg.jpg";
 import Tilt from "react-parallax-tilt";
+import { SlArrowDown } from "react-icons/sl";
 
-function SideBarTop() {
+function SideBarTop({ check, setCheck }) {
   return (
     <div style={{ width: "-webkit-fill-available" }}>
-      <main>
+      <main className="flex lg:flex-col items-center justify-between">
         <Tilt>
           <div
-            className="rounded-lg w-6/12 self-center m-auto p-2"
+            className="rounded-2xl self-center m-auto p-2"
             style={{ backgroundColor: "#4e4c4d" }}
           >
             <img src="/images/emoji/avatar4.png" alt="profile" />
             {/* <img src="/images/crop-profile.png" alt="profile" /> */}
           </div>
         </Tilt>
-        <h1 className="text-xl py-5 text-center">Swaroop Chandra</h1>
-        <div className="bg-stone-800 px-5 py-2 rounded-lg mb-8 m-auto w-9/12 flex justify-center">
-          <p className="moving">I'm a Web </p>
+        <div className="w-full flex flex-col justify-center ms-5">
+          <h1 className="text-lg lg:py-5 lg:text-center font-semibold">
+            Swaroop Chandra
+          </h1>
+          <div className="bg-stone-800 lg:px-5 lg:py-2 rounded-lg lg:mb-8 lg:m-auto lg:w-[12rem] w-[10rem]  px-3 py-1 mt-2 flex justify-center">
+            <p className="moving">I'm a Web </p>
+          </div>
+        </div>
+        <div
+          className="info_more_btn lg:hidden"
+          style={{ top: " 80px", right: "20px" }}
+          onClick={() => setCheck(!check)}
+        >
+          <SlArrowDown />
         </div>
       </main>
       <style jsx>{`
@@ -71,6 +83,21 @@ function SideBarTop() {
           100% {
             opacity: 0;
           }
+        }
+        .info_more_btn {
+          position: absolute;
+          border-radius: 0 15px;
+          font-size: 13px;
+          color: #ffdb70;
+          background: linear-gradient(
+            to bottom right,
+            hsl(0, 0%, 25%) 0%,
+            hsla(0, 0%, 25%, 0) 50%
+          );
+          padding: 10px;
+          box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+          transition: 0.25s ease;
+          z-index: 1;
         }
       `}</style>
     </div>

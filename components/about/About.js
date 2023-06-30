@@ -4,9 +4,9 @@ import Testimonial from "./testimonial";
 
 function About() {
   return (
-    <div className="overflow-y-scroll">
+    <div className="overflow-y-auto overflow-x-hidden">
       <main>
-        <p>
+        <p className="lg:text-md text-sm">
           I'm Creative Web Developer from Mangalore, India, working in MERN
           Stack. I enjoy turning complex problems into simple, beautiful and
           intuitive designs.
@@ -23,13 +23,12 @@ function About() {
           <Doing />
         </div>
         <div>
-          <h1 className="text-2xl  mb-4 font-semibold">Recommendation</h1>
+          <h1 className="text-2xl mt-8 mb-4 font-semibold">Recommendation</h1>
           <Testimonial />
         </div>
       </main>
       <style jsx>{`
         p {
-          font-size: 16px;
           font-weight: 200;
         }
         .service_item {

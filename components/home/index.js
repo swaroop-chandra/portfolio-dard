@@ -18,20 +18,25 @@ function index() {
   return (
     <div>
       <main>
-        <div className="lg:flex">
-          <div className="lg:w-3/12 sidebar">
+        <div className="lg:flex pb-8 lg:p-0">
+          <div className="lg:w-3/12 sidebar mx-5 lg:pt-8 lg:sticky lg:min-h-[44.5rem]">
             <SideBar />
           </div>
 
-          <div className="lg:w-9/12 sidebar ms-10 " style={{ height: "80vh" }}>
+          <div
+            className="lg:w-9/12 sidebar lg:pt-4 mx-5 lg:sticky mt-5 lg:mt-0 lg:ms-6 lg:h-[44.5rem] "
+            // style={{ height: "80vh" }}
+          >
             <div
-              className="flex "
+              className="flex place-content-center lg:place-content-start"
               style={{ justifyContent: "between", width: "100%" }}
             >
-              <h1 className="text-3xl font-bold ms-10 w-4/12 leading-loose border_bottom">
-                {click.title}
-              </h1>
-              <ul className="nav_bar w-8/12">
+              <div className="flex lg:justify-start  lg:ms-10 ">
+                <h1 className="text-3xl font-bold ms-10 w-4/12 leading-loose border_bottom flex lg:justify-start">
+                  {click.title}
+                </h1>
+              </div>
+              <ul className="nav_bar lg:w-8/12 w-full lg:absolute fixed inset-x-0 top-0 lg:rounded-tr-2xl lg:rounded-bl-2xl rounded-b-2xl">
                 {MenuItems.map((it) => (
                   <li
                     className={`cursor-pointer ${
@@ -44,7 +49,7 @@ function index() {
                 ))}
               </ul>
             </div>
-            <div className="flex flex-col justify-start w-full p-10 overflow-scroll ">
+            <div className="flex flex-col justify-start w-full lg:p-10 p-4 overflow-y-scroll ">
               {click.component}
             </div>
           </div>
@@ -52,12 +57,9 @@ function index() {
       </main>
       <style jsx>{`
         .sidebar {
-          position: sticky;
           top: 60px;
-          min-height: 90vh;
-          height: 100%;
           margin-bottom: 0;
-          padding-top: 30px;
+
           z-index: 1;
           border: 1px solid #383838;
           border-radius: 20px;
@@ -68,13 +70,9 @@ function index() {
           flex-direction: column;
         }
         .nav_bar {
-          position: absolute;
           bottom: auto;
           background: #282829;
-          top: 0;
           left: auto;
-          right: 0;
-          border-radius: 0 20px;
           padding: 0 20px;
           box-shadow: none;
           border: 1px solid #383838;
@@ -85,6 +83,7 @@ function index() {
           display: flex;
           justify-content: space-around;
           font-weight: 600;
+          z-index: 5;
         }
         .border_bottom {
           border-bottom: 4px solid #dba813;

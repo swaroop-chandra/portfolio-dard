@@ -38,7 +38,7 @@ function Doing() {
   return (
     <div>
       <main>
-        <div className="flex flex-wrap justify-between p-5">
+        <div className="flex lg:flex-row lg:flex-wrap flex-col justify-between p-5">
           <CardHome
             image={objectData[0].image}
             title={objectData[0].title}

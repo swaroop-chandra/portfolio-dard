@@ -16,7 +16,7 @@ const Experience = () => {
         <ol className="lg:ms-16 ms-12">
           <li className="timeline_item">
             <h4>Taskmo</h4>
-            <span>April 2021 - Present</span>
+            <span>Apr 2021 - Present</span>
             <p>
               Played a crucial role as the core member of the technical team.
               Responsible for developing flagship products for Taskmo with
@@ -54,7 +54,7 @@ const Experience = () => {
           </li>
           <li className="timeline_item">
             <h4>Cognitive Clouds</h4>
-            <span>Dec 2019 - January 2021</span>
+            <span>Dec 2019 - Jan 2021</span>
             <p>
               Holding a strong track record of working on multiple projects,
               including SYSTYM, Traksafety, and CHG. <br />
@@ -89,7 +89,7 @@ const Experience = () => {
           </li>
           <li className="timeline_item">
             <h4>DAZN</h4>
-            <span>2007 — 2008</span>
+            <span>Feb 2017 — Jun 2019</span>
             <p>
               Responsible for management content editing and placement and
               ensure that content adhered to the given guidelines and

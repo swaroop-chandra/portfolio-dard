@@ -1,7 +1,7 @@
 import React from "react";
 import bg from "../../public/images/background/bg.jpg";
 import Tilt from "react-parallax-tilt";
-import { SlArrowDown } from "react-icons/sl";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 function SideBarTop({ check, setCheck }) {
   return (
@@ -29,7 +29,7 @@ function SideBarTop({ check, setCheck }) {
           style={{ top: " 80px", right: "20px" }}
           onClick={() => setCheck(!check)}
         >
-          <SlArrowDown />
+          {check ? <SlArrowUp /> : <SlArrowDown />}
         </div>
       </main>
       <style jsx>{`

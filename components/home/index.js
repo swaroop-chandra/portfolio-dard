@@ -24,7 +24,7 @@ function index() {
           </div>
 
           <div
-            className="lg:w-9/12 sidebar lg:pt-4 mx-5 lg:sticky mt-5 lg:mt-0 lg:ms-6 lg:h-[44.5rem] "
+            className="lg:min-w-[69vw] sidebar lg:pt-4 mx-5 lg:sticky mt-5 lg:mt-0 lg:ms-6 lg:h-[44.5rem] "
             // style={{ height: "80vh" }}
           >
             <div
@@ -42,6 +42,7 @@ function index() {
                     className={`cursor-pointer ${
                       click.url == it.url ? "text-yellow-500" : "text-stone-500"
                     }`}
+                    key={it.title}
                     onClick={() => setClick(it)}
                   >
                     {it.title}

@@ -118,7 +118,7 @@ Best regards,`;
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Falneer,Mangalore - India
+                    Mangalore - India
                   </a>
                 </p>
               </div>
@@ -127,13 +127,13 @@ Best regards,`;
           <div className="border_bottom my-5"></div>
 
           <div className="my-4 flex justify-evenly gap-4">
-            <a
+            {/* <a
               href="https://www.facebook.com/swaroop.chandra.39/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiFacebook className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-blue-600 hover:bg-gray-300 rounded-md cursor-pointer" />
-            </a>
+            </a> */}
             <a
               href="https://github.com/swaroop-chandra"
               target="_blank"
@@ -141,13 +141,13 @@ Best regards,`;
             >
               <SiGithub className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-stone-950 hover:bg-gray-300 rounded-md cursor-pointer" />
             </a>
-            <a
+            {/* <a
               href="https://www.instagram.com/swapo_chan/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiInstagram className="lg:w-7 lg:h-7 w-5 h-5  text-stone-500 hover:text-fuchsia-500 hover:bg-gray-300 rounded-md cursor-pointer" />
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/swaroop-chandra/"
               target="_blank"

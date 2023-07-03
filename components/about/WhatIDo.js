@@ -14,25 +14,22 @@ function Doing() {
       image: <VscPieChart className="w-10 h-10 text-amber-400" />,
       title: "Web Architecture",
       message:
-        "The most modern and high-quality design made at a professional level.",
+        "Understand the requirement for the betterment of the development.",
     },
     {
       image: <VscPreview className="w-10 h-10 text-amber-400" />,
       title: "Front End Development",
-      message:
-        "The most modern and high-quality design made at a professional level.",
+      message: "High-quality development of sites at the professional level.",
     },
     {
       image: <VscFileCode className="w-10 h-10 text-amber-400" />,
       title: "Back End Design",
-      message:
-        "The most modern and high-quality design made at a professional level.",
+      message: "Professional development of applications and optimized code.",
     },
     {
       image: <GiPalette className="w-10 h-10 text-amber-400" />,
       title: "Artist",
-      message:
-        "The most modern and high-quality design made at a professional level.",
+      message: "Passion and my hobby to be more creative and learning new art.",
     },
   ];
   return (

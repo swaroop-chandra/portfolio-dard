@@ -37,4 +37,13 @@ export const ProjectItems = [
 
     message: "Taskmo landing page of the company. Tools used react.js and mui.",
   },
+  {
+    title: "DripSneak",
+    url: "https://main--bright-ganache-55dc69.netlify.app",
+    img: "/images/cards/sneaker.jpg",
+    git: "https://github.com/swaroop-chandra/sneakerEcom",
+    type: "fe",
+
+    message: "collaborate project on basis of E-commerce platform",
+  },
 ];

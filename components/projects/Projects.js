@@ -4,7 +4,6 @@ import { SiGithub } from "react-icons/si";
 import { TfiEye } from "react-icons/tfi";
 
 function Projects() {
-  console.log(ProjectItems, "ProjectItems");
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState("all");
   useEffect(() => {
@@ -19,34 +18,82 @@ function Projects() {
   return (
     <div>
       <main>
-        <ol className="capitalize flex gap-12 cursor-pointer pt-5 lg:pt-0">
-          <li className="hover:text-amber-400" onClick={() => setFilter("all")}>
-            Both
-          </li>
-          <li
-            className="hover:text-amber-400  lg:hidden flex"
-            onClick={() => setFilter("fe")}
-          >
-            FE
-          </li>
-          <li
-            className="hover:text-amber-400  hidden lg:flex"
-            onClick={() => setFilter("fe")}
-          >
-            Front End
-          </li>
-          <li
-            className="hover:text-amber-400 hidden lg:flex"
-            onClick={() => setFilter("be")}
-          >
-            Back End
-          </li>
-          <li
-            className="hover:text-amber-400 lg:hidden flex"
-            onClick={() => setFilter("be")}
-          >
-            BE
-          </li>
+        <ol className="capitalize flex gap-12 cursor-pointer pt-5 lg:pt-0 items-center h-10">
+          {filter == "all" ? (
+            <li
+              className="text-amber-400 font-semibold text-lg"
+              onClick={() => setFilter("all")}
+            >
+              Both
+            </li>
+          ) : (
+            <li
+              className="hover:text-orange-300 hover:font-light"
+              onClick={() => setFilter("all")}
+            >
+              Both
+            </li>
+          )}
+          {filter == "fe" ? (
+            <li
+              className="text-amber-400 font-semibold text-lg  lg:hidden flex"
+              onClick={() => setFilter("fe")}
+            >
+              FE
+            </li>
+          ) : (
+            <li
+              className="hover:text-orange-300 hover:font-light  lg:hidden flex"
+              onClick={() => setFilter("fe")}
+            >
+              FE
+            </li>
+          )}
+          {filter == "fe" ? (
+            <li
+              className="text-amber-400 font-semibold text-lg  hidden lg:flex"
+              onClick={() => setFilter("fe")}
+            >
+              Front End
+            </li>
+          ) : (
+            <li
+              className="hover:text-orange-300 hover:font-light  hidden lg:flex"
+              onClick={() => setFilter("fe")}
+            >
+              Front End
+            </li>
+          )}
+          {filter == "be" ? (
+            <li
+              className="text-amber-400 font-semibold text-lg  lg:hidden flex"
+              onClick={() => setFilter("be")}
+            >
+              BE
+            </li>
+          ) : (
+            <li
+              className="hover:text-orange-300 hover:font-light  lg:hidden flex"
+              onClick={() => setFilter("be")}
+            >
+              BE
+            </li>
+          )}
+          {filter == "be" ? (
+            <li
+              className="text-amber-400 font-semibold text-lg hidden lg:flex"
+              onClick={() => setFilter("be")}
+            >
+              Back End
+            </li>
+          ) : (
+            <li
+              className="hover:text-orange-300 hover:font-light hidden lg:flex"
+              onClick={() => setFilter("be")}
+            >
+              Back End
+            </li>
+          )}
         </ol>
         <div className="overflow-y-scroll  lg:flex flex-wrap">
           {data.map((proj) => (
